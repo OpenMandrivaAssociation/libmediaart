@@ -8,8 +8,8 @@
 
 Summary:	Library for managing media art caches
 Name:		libmediaart
-Version:	0.4.0
-Release:	4
+Version:	0.6.0
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://www.gnome.org/
