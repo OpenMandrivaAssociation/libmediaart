@@ -1,4 +1,5 @@
 removed_sources:
   libmediaart-0.4.0.tar.xz: ce999b7796afe3bb47ce47ab3fd1cc44a48647d7
-sources:
   libmediaart-0.6.0.tar.xz: ce235f2ea95ba1cfb7c6f29a39c1db559bb59a4f
+sources:
+  libmediaart-0.7.0.tar.xz: 6c106c68e6332238c748d56ed1c01bd7c67d6993
