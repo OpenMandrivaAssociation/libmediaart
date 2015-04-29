@@ -1,14 +1,14 @@
 %define	api	1.0
 %define major	0
 %define	libname	%mklibname	mediaart %{api} %{major}
-%define	girname	%mklibname	mediaart-gir %{api} 
+%define	girname	%mklibname	mediaart-gir %{api}
 %define	devname	%mklibname	mediaart	-d
 
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Summary:	Library for managing media art caches
 Name:		libmediaart
-Version:	0.7.0
+Version:	 1.9.0
 Release:	2
 License:	GPLv2+
 Group:		System/Libraries
