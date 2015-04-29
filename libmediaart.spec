@@ -1,4 +1,4 @@
-%define	api	1.0
+%define	api	2.0
 %define major	0
 %define	libname	%mklibname	mediaart %{api} %{major}
 %define	girname	%mklibname	mediaart-gir %{api}
@@ -56,8 +56,7 @@ This package contains files needed for development with %{name}.
 %setup -q
 
 %build
-%configure2_5x \
-	--disable-static \
+%configure \
 	--enable-gtk-doc
 %make
 
@@ -83,18 +82,4 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_datadir}/vala/vapi/%{name}-%{api}.vapi
-
-
-%changelog
-* Tue Apr 01 2014 ovitters <ovitters> 0.4.0-1.mga5
-+ Revision: 611147
-- new version 0.4.0
-
-* Fri Mar 14 2014 dams <dams> 0.3.0-1.mga5
-+ Revision: 603447
-- new version 0.3.0
-
-* Wed Feb 19 2014 ovitters <ovitters> 0.2.0-1.mga5
-+ Revision: 594700
-- imported package libmediaart
 
