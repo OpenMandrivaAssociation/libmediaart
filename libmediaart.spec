@@ -8,13 +8,13 @@
 
 Summary:	Library for managing media art caches
 Name:		libmediaart
-Version:	 1.9.4
-Release:	2
+Version:	1.9.5
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://www.gnome.org/
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-BuildRequires:	intltool
+BuildRequires:	meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	gtk-doc
 BuildRequires:	pkgconfig(vapigen)
@@ -56,15 +56,12 @@ This package contains files needed for development with %{name}.
 %setup -q
 
 %build
-%configure \
-	--enable-gtk-doc
-%make
+%meson
+
+%meson_build
 
 %install
-%makeinstall_std
-
-#Remove libtool archives.
-find %{buildroot} -name '*.la' -delete
+%meson_install
 
 %files -n %{libname}
 %{_libdir}/%{name}-%{api}.so.%{major}*
@@ -82,4 +79,3 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_datadir}/vala/vapi/%{name}-%{api}.vapi
-
