@@ -74,7 +74,6 @@ This package contains files needed for development with %{name}.
 %dir %{_includedir}/%{name}-%{api}/%{name}
 %{_includedir}/%{name}-%{api}/%{name}/*
 #%doc %{_datadir}/doc/%{name}/*
-%{_datadir}/gtk-doc/html/%{name}/*
 %{_datadir}/gir-1.0/MediaArt-%{api}.gir
 %{_libdir}/%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
