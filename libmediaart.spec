@@ -78,3 +78,4 @@ This package contains files needed for development with %{name}.
 %{_libdir}/%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_datadir}/vala/vapi/%{name}-%{api}.vapi
+%{_datadir}/vala/vapi/libmediaart-2.0.deps
