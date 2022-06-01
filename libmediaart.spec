@@ -8,7 +8,7 @@
 
 Summary:	Library for managing media art caches
 Name:		libmediaart
-Version:	1.9.5
+Version:	1.9.6
 Release:	1
 License:	GPLv2+
 Group:		System/Libraries
