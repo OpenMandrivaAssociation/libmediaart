@@ -12,7 +12,7 @@ Version:	1.9.6
 Release:	2
 License:	GPLv2+
 Group:		System/Libraries
-URL:		http://www.gnome.org/
+URL:		https://www.gnome.org/
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
